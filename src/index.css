@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  transition: all 1s;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  flex-direction: column;
+}
+
+.block {
+  width: 20vw;
+  height: 200px;
+  border-radius: 20px;
+  animation: move 1s both;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+h1 {
+  transform: rotate(-90deg);
+  margin-left: 20px;
+  color: white;
+}
